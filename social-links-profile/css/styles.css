@@ -6,6 +6,7 @@
 * CARD-COMPONENT
 * PROFILE
 * SOCIAL-LINKS
+* PROFILE
 * LAYOUT
 *
 **/
@@ -162,6 +163,33 @@ html {
 }
 
 /*--------------------------*\
+  #ATTRIBUTION 
+\*--------------------------*/
+
+.attribution {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-regular);
+  color: var(--white);
+}
+
+.attribution-link {
+  text-decoration: none;
+  color: var(--white);
+  transition: color 0.2s ease;
+}
+
+.attribution-link:hover,
+.attribution-link:focus-visible {
+  color: var(--green);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .attribution-link {
+    transition-duration: 0.01ms;
+  }
+}
+
+/*--------------------------*\
   #LAYOUT 
 \*--------------------------*/
 
@@ -173,5 +201,12 @@ html {
 
   padding: var(--spacing-200);
 
+  background-color: var(--grey-900);
+}
+
+.footer {
+  padding: var(--spacing-200);
+
+  text-align: center;
   background-color: var(--grey-900);
 }
