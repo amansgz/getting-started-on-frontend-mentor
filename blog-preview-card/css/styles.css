@@ -4,10 +4,10 @@
 * RESET
 * GLOBAL-STYLES
 * CARD-COMPONENT
-* 
-* 
+* ATTRIBUTION
 * LAYOUT
-*/
+*
+**/
 
 /*--------------------------*\
   #RESET 
@@ -169,6 +169,27 @@ html {
 }
 
 /*--------------------------*\
+  #ATTRIBUTION 
+\*--------------------------*/
+
+.attribution {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-regular);
+  color: var(--gray-950);
+}
+
+.attribution-link {
+  text-decoration: none;
+  color: var(--gray-950);
+  transition: text-decoration 0.2s ease;
+}
+
+.attribution-link:hover,
+.attribution-link:focus-visible {
+  text-decoration: underline;
+}
+
+/*--------------------------*\
   #LAYOUT 
 \*--------------------------*/
 
@@ -180,5 +201,12 @@ html {
 
   padding: var(--spacing-200);
 
+  background-color: var(--yellow);
+}
+
+.footer {
+  padding: var(--spacing-200);
+
+  text-align: center;
   background-color: var(--yellow);
 }
