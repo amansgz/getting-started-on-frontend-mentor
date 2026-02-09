@@ -1,0 +1,121 @@
+/** 
+* CONTENTS
+*
+* RESET
+* GLOBAL-STYLES
+* CARD-COMPONENT
+* LAYOUT
+*
+*/
+
+/*--------------------------*\
+  #RESET 
+\*--------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*--------------------------*\
+  #GLOBAL-STYLES 
+\*--------------------------*/
+:root {
+  --white: hsl(0, 0%, 100%);
+
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+
+  /* Fonts */
+
+  --ff-body: "Outfit", sans-serif;
+
+  --fs-body: 15px;
+  --fs-md: 1rem;
+  --fs-lg: 1.47rem;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* Spacing */
+
+  --spacing-200: 1.06rem;
+  --spacing-300: 1.6rem;
+  --spacing-500: 2.66rem;
+
+  /* Border Radius */
+
+  --border-radius-sm: 10px;
+  --border-radius-md: 20px;
+
+  /* Shadows */
+
+  --shadow-medium: 0px 25px 25px 0px rgba(0, 0, 0, 0.47);
+}
+
+html {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+}
+
+/*--------------------------*\
+  #CARD-COMPONENT 
+\*--------------------------*/
+.card {
+  inline-size: 100%;
+  max-inline-size: 21.33rem;
+  padding: var(--spacing-200);
+  background-color: var(--white);
+
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-medium);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200);
+
+  padding: var(--spacing-300) var(--spacing-200);
+  text-align: center;
+}
+
+.card-img {
+  max-inline-size: 100%;
+  block-size: auto;
+  border-radius: var(--border-radius-sm);
+}
+
+.card-title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  line-height: 1.2;
+  color: var(--slate-900);
+}
+
+.card-description {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-regular);
+  line-height: 1.4;
+  letter-spacing: 0.0133rem;
+  color: var(--slate-500);
+}
+
+/*--------------------------*\
+  #LAYOUT 
+\*--------------------------*/
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-block-size: 100dvh;
+
+  padding: var(--spacing-300);
+
+  background-color: var(--slate-300);
+}
