@@ -28,9 +28,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/blog-preview-card-sDpAD9byf0](https://www.frontendmentor.io/solutions/blog-preview-card-sDpAD9byf0)
 
-- Live Site URL: [https://amansgz.github.io/getting-started-on-frontend-mentor/blog-preview-card/index.html](https://amansgz.github.io/getting-started=on-frontend-mentor/blog-preview-card/index.html)
+- Live Site URL: [https://amansgz.github.io/getting-started-on-frontend-mentor/blog-preview-card/index.html](https://amansgz.github.io/getting-started-on-frontend-mentor/blog-preview-card/index.html)
 
 ## My process
 
