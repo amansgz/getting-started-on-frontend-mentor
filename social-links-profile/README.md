@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/social-links-profile-bb8VPCELhQ](https://www.frontendmentor.io/solutions/social-links-profile-bb8VPCELhQ)
 
 - Live Site URL: [https://amansgz.github.io/getting-started-on-frontend-mentor/social-links-profile/index.html](https://amansgz.github.io/getting-started-on-frontend-mentor/social-links-profile/index.html)
 
