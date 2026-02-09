@@ -29,8 +29,8 @@ The challenge was to build out this QR code component and get it as close as pos
 ### Links
 
 - Live Site URL: [https://amansgz.github.io/getting-started-on-frontend-mentor/qr-code-component/index.html](https://amansgz.github.io/getting-started-on-frontend-mentor/qr-code-component/index.html)
-- Solution URL: []()
-- Challenge URL: [](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
+- Solution URL: [https://www.frontendmentor.io/solutions/card-component-built-with-css-custom-properties-krZg583OIP](https://www.frontendmentor.io/solutions/card-component-built-with-css-custom-properties-krZg583OIP)
+- Challenge URL: [https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
 
 ## My process
 
