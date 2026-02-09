@@ -30,7 +30,7 @@ The challenge was to build out this QR code component and get it as close as pos
 
 - Live Site URL: [https://amansgz.github.io/getting-started-on-frontend-mentor/qr-code-component/index.html](https://amansgz.github.io/getting-started-on-frontend-mentor/qr-code-component/index.html)
 - Solution URL: []()
-- Challenge URL: [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
+- Challenge URL: [](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
 
 ## My process
 
