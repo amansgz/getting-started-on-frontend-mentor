@@ -4,8 +4,9 @@
 * RESET
 * GLOBAL-STYLES
 * CARD-COMPONENT
+* ATTRIBUTION
 * LAYOUT
-*
+
 */
 
 /*--------------------------*\
@@ -35,6 +36,7 @@
   --ff-body: "Outfit", sans-serif;
 
   --fs-body: 15px;
+  --fs-sm: 0.9rem;
   --fs-md: 1rem;
   --fs-lg: 1.47rem;
 
@@ -106,6 +108,33 @@ html {
 }
 
 /*--------------------------*\
+  #ATTRIBUTION 
+\*--------------------------*/
+
+.attribution {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-regular);
+  color: var(--slate-900);
+}
+
+.attribution-link {
+  text-decoration: none;
+  color: var(--slate-900);
+  transition: text-decoration 0.2s ease;
+}
+
+.attribution-link:hover,
+.attribution-link:focus-visible {
+  text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .attribution-link {
+    transition-duration: 0.01ms;
+  }
+}
+
+/*--------------------------*\
   #LAYOUT 
 \*--------------------------*/
 
@@ -115,7 +144,14 @@ html {
   justify-content: center;
   min-block-size: 100dvh;
 
-  padding: var(--spacing-300);
+  padding: var(--spacing-200);
 
+  background-color: var(--slate-300);
+}
+
+.footer {
+  padding: var(--spacing-200);
+
+  text-align: center;
   background-color: var(--slate-300);
 }
