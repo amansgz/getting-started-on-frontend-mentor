@@ -7,6 +7,7 @@
 * RECIPE-LISTS
 * RECIPE-TABLE
 * RECIPE
+* ATTRIBUTION
 * LAYOUT
 * MEDIA QUERIES
 *
@@ -216,6 +217,33 @@ body {
   border: 1px solid var(--stone-150);
 }
 
+/*--------------------------*\
+  #ATTRIBUTION 
+\*--------------------------*/
+
+.attribution {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-regular);
+  color: var(--stone-900);
+}
+
+.attribution-link {
+  text-decoration: none;
+  color: var(--stone-900);
+  transition: color 0.2s ease;
+}
+
+.attribution-link:hover,
+.attribution-link:focus-visible {
+  color: var(--rose-800);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .attribution-link {
+    transition-duration: 0.01ms;
+  }
+}
+
 /*---------------------------*\
   #LAYOUT 
 \*---------------------------*/
@@ -237,6 +265,13 @@ body {
 .container--recipe {
   gap: var(--spacing-150);
   padding: var(--spacing-150);
+}
+
+.footer {
+  padding: var(--spacing-100);
+
+  text-align: center;
+  background-color: var(--stone-100);
 }
 
 /*---------------------------*\
