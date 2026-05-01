@@ -1,4 +1,4 @@
-# Frontend Mentor - Recipe Page
+# Frontend Mentor - Recipe Page solution
 
 This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm) , part of learning path [Getting started on Frontend Mentor](https://www.frontendmentor.io/learning-paths/getting-started-on-frontend-mentor-XJhRWRREZd).
 
@@ -18,12 +18,9 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
     - [Layout](#layout)
   - [What I learned](#what-i-learned)
     - [Semantic HTML Structure](#semantic-html-structure)
+    - [CSS structure](#css-structure)
     - [CSS styles](#css-styles)
-      - [CSS structure](#css-structure)
-
-- [How to run locally](#how-to-run-locally)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -45,7 +42,7 @@ The goal was to build the optimal layout for the site depending on their device'
 
 - Solution URL: [https://www.frontendmentor.io/solutions/responsive-recipe-page-with-css-custom-lists-and-table-b3PkL8p9hG](https://www.frontendmentor.io/solutions/responsive-recipe-page-with-css-custom-lists-and-table-b3PkL8p9hG)
 
-- Live Site URL: [https://fem-solutions.github.io/recipe-page](https://fem-solutions.github.io/recipe-page)
+- Live Site URL: [https://amansgz.github.io/getting-started-on-frontend-mentor/recipe-page/index.html](https://amansgz.github.io/getting-started-on-frontend-mentor/recipe-page/index.html)
 
 ## My process
 
@@ -62,7 +59,6 @@ The goal was to build the optimal layout for the site depending on their device'
 ```
 recipe-page/
 |
-|--- .gitignore
 |--- README.md
 |--- index.html
 |--- css/
@@ -81,9 +77,9 @@ recipe-page/
 |--- screenshots/ (screenshots for mobile, tablet and desktop screens)
 ```
 
-#### Front-end Style Guide
+### Front-end Style Guide
 
-##### Colors
+#### Colors
 
 ```
 - White: hsl(0, 0%, 100%)
@@ -100,7 +96,7 @@ recipe-page/
 
 ```
 
-##### Font
+#### Font
 
 - Font size (paragraph): 16px
 - Family: `Young Serif`
@@ -109,7 +105,7 @@ recipe-page/
 - Family: `Outfit`
 - Weights: `400`,`600`, `700` (regular, semibold, bold)
 
-##### Layout
+#### Layout
 
 - **Mobile**: 320px - 768px
 - **Tablet/Desktop**: 768px - 1440px
@@ -119,11 +115,9 @@ recipe-page/
 
 #### Semantic HTML Structure
 
-The `<section>` groups related content (the recipe and the details recipe: preparation, ingredients, instructions, nutrition).
+The `<section>` groups related content (preparation, ingredients, instructions, nutrition).
 
 The section `<header>` contains introductory content (recipe img, title and description).
-
-the `article` element, which represents a self-contained, independent composition (preparation).
 
 ```html
 <!-- Recipe -->
@@ -134,82 +128,36 @@ the `article` element, which represents a self-contained, independent compositio
   </header>
 
   <!-- Recipe Details -->
-  <section>
+  <div>
     <!-- Preparation -->
-    <article>
+    <section>
       <!-- title, list -->
-    </article>
+    </section>
 
     <!-- Ingredients -->
     <section>
       <!-- title, list -->
     </section>
 
-    <!-- content divider -->
-    <hr />
-
     <!-- Instructions -->
     <section>
       <!-- title, list -->
     </section>
 
-    <!-- content divider -->
-    <hr />
-
     <!-- Nutrition -->
     <section>
       <!-- title, description, table -->
     </section>
-  </section>
+  </div>
 </section>
 ```
 
-#### CSS styles
-
-Implemented a design system based on the Figma design and style guide, featuring:
-
-- **CSS custom properties** for colors, font styles and elements spacing
-- **Logical properties** for improved layout flexibility
-- **rem units** for consistent and responsive scaling
-
-Created custom bullets and counter list using pseudo-elements(`::before`)
-
-```css
-.recipe__list li::before {
-  content: ".";
-  position: absolute;
-  inset-inline-start: 0;
-  inset-block-start: -20px;
-  font-size: 1.8rem;
-}
-
-.recipe__list--preparation li::before {
-  color: var(--rose-800);
-}
-
-.recipe__list--ingredients li::before {
-  color: var(--brown-800);
-}
-```
-
-```css
-.recipe__list--instructions li::before {
-  content: counter(orderedList) ".";
-  position: absolute;
-  inset-inline-start: 0;
-  inset-block-start: 0;
-  font-size: 1rem;
-  font-weight: var(--fw-semibold);
-  color: var(--brown-800);
-}
-```
-
-##### CSS Structure
+#### CSS Structure
 
 - Main stylesheet path in `index.html`
 
 ```html
-<link rel="stylesheet" href="./main.css" />
+<link rel="stylesheet" href="./css/main.css" />
 ```
 
 `main.css` import stylesheets:
@@ -229,27 +177,48 @@ Created custom bullets and counter list using pseudo-elements(`::before`)
 @import "components/footer.css";
 ```
 
-## How to Run Locally
+#### CSS styles
 
-1. Clone this repository:
+Implemented a design system based on the style guide, featuring:
 
-```bash
-git clone https://github.com/FEM-solutions/recipe-page.git
+- **CSS custom properties** for colors, font styles and elements spacing
+- **Logical properties** for improved layout flexibility
+- **rem units** for consistent and responsive scaling
+
+Created custom bullets and counter list using pseudo-elements(`::before`)
+
+```css
+.recipe__list li::before {
+  content: "\2022";
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-start: 0;
+  font-size: 1rem;
+}
+
+.recipe__list--preparation li::before {
+  color: var(--rose-800);
+}
+
+.recipe__list--ingredients li::before {
+  color: var(--brown-800);
+}
 ```
 
-2. Navigate to project folder:
-
-```bash
-cd recipe-page
+```css
+.recipe__list--instructions li::before {
+  content: counter(orderedList) ".";
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-start: 0;
+  font-size: 1rem;
+  font-weight: var(--fw-semibold);
+  line-height: inherit;
+  color: var(--brown-800);
+}
 ```
-
-3. Open `index.html`in your browser or use Live Server in VS Code.
 
 ## Author
 
 - Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)
 - Github - [@amansgz](https://github.com/amansgz)
-
-## Acknowledgments
-
-- [Frontend Mentor](https://www.frontendmentor.io/) challenges help you improve your coding skills by building realistic projects.
