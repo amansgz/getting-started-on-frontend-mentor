@@ -1,0 +1,62 @@
+/* ===================================
+   base.css - Fundamental Styles
+  ==================================== */
+
+/* -----------------------------------
+  1. RESET
+  ------------------------------------ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  display: block;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* -----------------------------------
+  2. @FONT-FACE (Font imports)
+  ------------------------------------ */
+
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/static/Figtree-Medium.ttf") format(truetype);
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/static/Figtree-ExtraBold.ttf") format(truetype);
+  font-weight: 800;
+  font-display: swap;
+}
+
+/* -----------------------------------
+  3. GLOBAL STYLES
+  ------------------------------------ */
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-md);
+  line-height: 1.5;
+  color: var(--clr-text-secondary);
+  background-color: var(--clr-bg-body);
+}

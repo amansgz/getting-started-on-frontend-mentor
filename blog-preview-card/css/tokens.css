@@ -1,0 +1,47 @@
+/* ===================================
+   tokens.css  
+  ==================================== */
+
+:root {
+  /* Colors */
+  --clr-yellow: hsl(47, 88%, 63%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-gray-500: hsl(0, 0%, 42%);
+  --clr-gray-950: hsl(0, 0%, 7%);
+
+  /* Colors - Semantic */
+  --clr-text-primary: var(--clr-gray-950);
+  --clr-text-secondary: var(--clr-gray-500);
+  --clr-bg-body: var(--clr-yellow);
+  --clr-bg-card: var(--clr-white);
+  --clr-bg-badge: var(--clr-yellow);
+  --clr-border: var(--clr-gray-950);
+
+  /* Color Hovers */
+  --clr-hover: var(--clr-yellow);
+
+  /* Spacing */
+  --spacing-50: 0.25rem;
+  --spacing-100: 0.5rem;
+  --spacing-150: 0.75rem;
+  --spacing-200: 0.875rem;
+  --spacing-300: 1.5rem;
+
+  /* Typography */
+  --ff-body: "Figtree", sans-serif;
+
+  --fs-sm: clamp(0.75rem, 1.5rem + 0.5rem, 0.875rem);
+  --fs-md: clamp(0.875rem, 2vw + 0.5rem, 1rem);
+  --fs-lg: clamp(1.25rem, 4vw + 0.5rem, 1.5rem);
+
+  --fw-medium: 500;
+  --fw-extra-bold: 800;
+
+  /* Border Radius */
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.625rem;
+  --border-radius-lg: 1.25rem;
+
+  /* Box shadows */
+  --shadow-card: 8px 8px 0 0 var(--clr-gray-950);
+}

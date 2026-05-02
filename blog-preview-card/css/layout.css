@@ -1,0 +1,23 @@
+/* ===================================
+   layout.css 
+  ==================================== */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-block-size: 100dvh;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: var(--spacing-150); /* for mobile */
+}
+
+.footer {
+  margin-block-start: auto; /* fallback */
+  padding-block: var(--spacing-100);
+}
