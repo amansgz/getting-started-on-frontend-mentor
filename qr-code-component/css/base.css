@@ -1,0 +1,42 @@
+/* ===================================
+   base.css - Fundamental Styles
+  ==================================== */
+
+/* -----------------------------------
+  1. RESET
+  ------------------------------------ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* -----------------------------------
+  2. GLOBAL STYLES
+  ------------------------------------ */
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  line-height: 1.5;
+  color: var(--clr-text-secondary);
+  background-color: var(--clr-bg-body);
+}
