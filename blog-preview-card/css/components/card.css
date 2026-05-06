@@ -1,0 +1,93 @@
+/* ===================================
+   card.css 
+  ==================================== */
+
+@import "./author.css";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+
+  inline-size: min(24rem, 90vw);
+
+  padding: var(--spacing-300);
+
+  border-radius: var(--border-radius-lg);
+  background-color: var(--clr-bg-card);
+  border: 0.0625rem solid var(--clr-border);
+  box-shadow: var(--shadow-card);
+}
+
+.card__header {
+  inline-size: 100%;
+  block-size: 12.5rem; /* for image */
+  overflow: hidden;
+}
+
+/*  show a cropped portion on mobile and complete image on desktop */
+.card__img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: var(--border-radius-md);
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-150);
+}
+
+.card__badge {
+  display: inline-flex;
+  align-self: flex-start;
+
+  padding: var(--spacing-50) var(--spacing-150);
+  border-radius: var(--border-radius-sm);
+
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-extra-bold);
+}
+
+.card__badge--learning {
+  color: var(--clr-text-primary);
+  background-color: var(--clr-bg-badge);
+}
+
+.card__wrapper-date {
+  display: flex;
+  gap: var(--spacing-50);
+  align-items: baseline;
+}
+
+.card__published,
+.card__date {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--clr-text-primary);
+}
+
+.card__title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-extra-bold);
+  color: var(--clr-text-primary);
+
+  transition: color 0.2s ease;
+}
+
+.card__title:hover,
+.card__title:focus-visible {
+  color: var(--clr-hover);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card__title {
+    transition-duration: 0.01ms;
+  }
+}
+
+.card__description {
+  font-weight: var(--fw-medium);
+}
