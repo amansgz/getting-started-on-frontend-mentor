@@ -1,0 +1,25 @@
+/* ===================================
+   attribution.css 
+  ==================================== */
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-100);
+  flex-wrap: wrap; /* for mobile */
+
+  font-size: var(--fs-sm);
+  color: var(--clr-text-primary);
+}
+
+/* Hover state */
+.attribution__link:hover {
+  text-decoration: underline;
+}
+
+/* Focus state */
+.attribution__link:focus-visible {
+  outline: 0.125rem solid var(--clr-border);
+  outline-offset: 0.125rem;
+  border-radius: 0.125rem;
+}
