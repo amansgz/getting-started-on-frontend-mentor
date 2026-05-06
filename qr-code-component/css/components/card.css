@@ -1,0 +1,38 @@
+/* ===================================
+   card.css  
+  ==================================== */
+
+.card {
+  inline-size: 100%;
+  max-inline-size: 20rem;
+
+  padding: var(--space-200);
+
+  border-radius: var(--radius-md);
+  background-color: var(--clr-bg-card);
+  box-shadow: var(--shadow-card);
+}
+
+.card__image {
+  border-radius: var(--radius-sm);
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-200);
+
+  padding: var(--space-300) var(--space-200);
+  text-align: center;
+}
+
+.card__title {
+  font-size: var(--fs-title);
+  font-weight: var(--fw-bold);
+  line-height: 1.2;
+  color: var(--clr-text-primary);
+}
+
+.card__description {
+  line-height: 1.4;
+}
