@@ -1,0 +1,40 @@
+/*  ========================================
+    footer.css 
+    ======================================== */
+
+.footer {
+  padding: var(--spacing-100);
+
+  text-align: center;
+  background-color: var(--stone-100);
+}
+
+/* Attribution */
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-100);
+  flex-wrap: wrap; /* for mobile */
+
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-regular);
+  color: var(--stone-900);
+}
+
+.attribution__link {
+  text-decoration: none;
+  color: var(--stone-900);
+  transition: color 0.2s ease;
+}
+
+.attribution__link:hover,
+.attribution__link:focus-visible {
+  color: var(--rose-800);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .attribution__link {
+    transition-duration: 0.01ms;
+  }
+}
