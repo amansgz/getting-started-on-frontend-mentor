@@ -1,0 +1,28 @@
+/*  ========================================
+    recipe-table.css 
+    ======================================== */
+
+.recipe__table {
+  inline-size: 100%;
+  border-collapse: collapse;
+}
+
+.recipe__table tr {
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.recipe__table td {
+  padding-block: var(--spacing-150);
+  text-align: start;
+  text-indent: 2rem;
+  color: var(--stone-900);
+}
+
+.recipe__table tr:last-child {
+  border-bottom: none;
+}
+
+.recipe__table tr td:nth-child(2) {
+  font-weight: var(--fw-bold);
+  color: var(--rose-800);
+}

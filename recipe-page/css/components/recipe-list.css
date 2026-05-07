@@ -1,0 +1,55 @@
+/*  ========================================
+    recipe-list.css 
+    ======================================== */
+
+.recipe__list {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.recipe__list li {
+  position: relative;
+  margin-block-start: var(--spacing-100);
+  padding-inline-start: var(--spacing-150);
+  color: var(--stone-600);
+}
+
+/* Custom list bullets */
+.recipe__list li::before {
+  content: ".";
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-start: -10px;
+  font-size: var(--fs-lg);
+}
+
+.recipe__list--preparation li::before {
+  color: var(--rose-800);
+}
+
+.recipe__list--ingredients li::before {
+  color: var(--brown-800);
+}
+
+.recipe__list--instructions {
+  counter-reset: orderedList;
+}
+
+.recipe__list--instructions li {
+  counter-increment: orderedList;
+  margin-block-start: var(--spacing-100);
+  padding-inline-start: var(--spacing-150);
+  line-height: 1.5;
+  position: relative;
+}
+
+.recipe__list--instructions li::before {
+  content: counter(orderedList) ".";
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-start: 0;
+
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  color: var(--brown-800);
+}
