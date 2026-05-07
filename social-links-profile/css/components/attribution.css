@@ -1,0 +1,33 @@
+/*  ========================================
+    attribution.css 
+    ======================================== */
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-100);
+  flex-wrap: wrap; /* for mobile */
+
+  font-size: var(--fs-sm);
+}
+
+.attribution__link {
+  transition: color 0.2s ease;
+}
+
+.attribution__link:hover,
+.attribution__link:focus-visible {
+  color: var(--clr-text-accent);
+}
+
+.attribution__link:focus-visible {
+  outline: 0.125rem solid var(--clr-text-accent);
+  outline-offset: 0.125rem;
+  border-radius: 0.125rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .attribution__link {
+    transition-duration: 0.01ms;
+  }
+}
