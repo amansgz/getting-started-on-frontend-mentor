@@ -1,0 +1,50 @@
+/*  ========================================
+    layout.css 
+    ======================================== */
+
+.container {
+  max-inline-size: var(--container-max-width);
+  margin: var(--container-margin);
+
+  inline-size: 100%;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe__details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-150);
+
+  padding: var(--spacing-200);
+}
+
+.recipe__content {
+  padding: var(--spacing-150);
+}
+
+.recipe__preparation {
+  padding: var(--spacing-200);
+}
+
+/*---------------------------*\
+  #MEDIA-QUERIES 
+\*---------------------------*/
+
+@media (min-width: 48rem) {
+  .recipe {
+    margin-block: var(--spacing-200);
+    padding: var(--spacing-200);
+  }
+
+  .recipe__details {
+    padding: 0;
+  }
+
+  .recipe__content {
+    padding-inline: 0;
+  }
+}
