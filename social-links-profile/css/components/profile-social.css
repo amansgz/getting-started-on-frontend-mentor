@@ -1,0 +1,44 @@
+/*  ========================================
+    profile-social.css 
+    ======================================== */
+
+.profile__social-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-150);
+}
+
+.profile__social-link {
+  display: block;
+  padding: var(--spacing-100);
+
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.0625rem;
+  text-align: center;
+  color: var(--clr-text-white);
+
+  border-radius: var(--border-radius-sm);
+  background-color: var(--clr-bg-button);
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.profile__social-link:hover,
+.profile__social-link:focus-visible {
+  background-color: var(--clr-bg-hover);
+  color: var(--clr-text-hover);
+}
+
+.profile__social-link:focus-visible {
+  outline: 0.125rem solid var(--clr-green);
+  outline-offset: 0.125rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .profile__social-link {
+    transition-duration: 0.01ms;
+  }
+}
